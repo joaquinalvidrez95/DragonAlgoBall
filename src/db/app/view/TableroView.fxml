@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.65"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="db.app.view.TableroViewController">
+    <children>
+        <VBox prefHeight="900.0" prefWidth="1400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox prefHeight="800.0" prefWidth="1400.0">
+                    <children>
+                        <AnchorPane prefHeight="800.0" prefWidth="300.0">
+                            <children>
+                                <SplitPane dividerPositions="0.7" layoutX="20.0" layoutY="247.0" orientation="VERTICAL"
+                                           prefHeight="800.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+                                           AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                           AnchorPane.topAnchor="0.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                            <children>
+                                                <VBox layoutX="56.0" layoutY="90.0" prefHeight="555.0" prefWidth="298.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <children>
+                                                        <Label fx:id="equipoJugadorGerrerosZ" alignment="CENTER"
+                                                               prefHeight="100.0" prefWidth="300.0" text="Label"
+                                                               textFill="#003300">
+                                                            <font>
+                                                                <Font size="22.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="nombreJugadorGerrerosZ" alignment="CENTER"
+                                                               prefHeight="100.0" prefWidth="300.0" text="Label">
+                                                            <font>
+                                                                <Font size="18.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <AnchorPane prefHeight="400.0" prefWidth="298.0">
+                                                            <children>
+                                                                <BorderPane fx:id="borderPaneInfoPersonajeGuerrerosZ"
+                                                                            layoutX="61.0" layoutY="82.0"
+                                                                            prefHeight="385.0" prefWidth="298.0"
+                                                                            AnchorPane.bottomAnchor="0.0"
+                                                                            AnchorPane.leftAnchor="0.0"
+                                                                            AnchorPane.rightAnchor="0.0"
+                                                                            AnchorPane.topAnchor="0.0"/>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                            <children>
+                                                <TableView fx:id="personTableJugadorGerrerosZ" layoutX="-1.0"
+                                                           layoutY="118.0" prefHeight="235.0" prefWidth="298.0"
+                                                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <columns>
+                                                        <TableColumn fx:id="namePersonajeColumnJugadorGerrerosZ"
+                                                                     prefWidth="90.0" text="Nombre"/>
+                                                        <TableColumn fx:id="vidaPersonajeColumnJugadorGerrerosZ"
+                                                                     prefWidth="40.0" text="Vida"/>
+                                                        <TableColumn fx:id="KiPersonajeColumnJugadorGerrerosZ"
+                                                                     prefWidth="40.0" text="Ki"/>
+                                                        <TableColumn fx:id="velocidadPersonajeColumnJugadorGerrerosZ"
+                                                                     prefWidth="40.0" text="Vel"/>
+                                                        <TableColumn fx:id="estadoPersonajeColumnJugadorGerrerosZ"
+                                                                     prefWidth="90.0" text="Estado"/>
+                                                    </columns>
+                                                </TableView>
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="800.0" prefWidth="800.0">
+                            <children>
+                                <GridPane fx:id="tablero" gridLinesVisible="true" prefHeight="800.0" prefWidth="800.0">
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="800.0" prefWidth="300.0">
+                            <children>
+                                <SplitPane dividerPositions="0.7" layoutX="40.0" layoutY="268.0" orientation="VERTICAL"
+                                           prefHeight="800.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+                                           AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                           AnchorPane.topAnchor="0.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                            <children>
+                                                <VBox layoutX="99.0" layoutY="181.0" prefHeight="555.0"
+                                                      prefWidth="298.0" AnchorPane.bottomAnchor="0.0"
+                                                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                                      AnchorPane.topAnchor="0.0">
+                                                    <children>
+                                                        <Label fx:id="equipoJugadorEnemigosDeLaTierra"
+                                                               alignment="CENTER" prefHeight="100.0" prefWidth="300.0"
+                                                               text="Label" textFill="#e32210">
+                                                            <font>
+                                                                <Font size="22.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="nombreJugadorEnemigosDeLaTierra"
+                                                               alignment="CENTER" prefHeight="100.0" prefWidth="300.0"
+                                                               text="Label">
+                                                            <font>
+                                                                <Font size="18.0"/>
+                                                            </font>
+                                                        </Label>
+                                                        <ButtonBar prefHeight="40.0" prefWidth="200.0"/>
+                                                        <AnchorPane prefHeight="400.0" prefWidth="298.0">
+                                                            <children>
+                                                                <BorderPane
+                                                                        fx:id="borderPaneInfoPersonajeEnemigosDeLaTierra"
+                                                                        layoutX="84.0" layoutY="73.0" prefHeight="379.0"
+                                                                        prefWidth="298.0" AnchorPane.bottomAnchor="0.0"
+                                                                        AnchorPane.leftAnchor="0.0"
+                                                                        AnchorPane.rightAnchor="0.0"
+                                                                        AnchorPane.topAnchor="0.0"/>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                            <children>
+                                                <TableView fx:id="personTableJugadorEnemigosDeLaTierra" layoutX="-1.0"
+                                                           layoutY="14.0" prefHeight="235.0" prefWidth="298.0"
+                                                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <columns>
+                                                        <TableColumn
+                                                                fx:id="namePersonajeColumnJugadorEnemigosDeLaTierra"
+                                                                prefWidth="90.0" text="Nombre"/>
+                                                        <TableColumn
+                                                                fx:id="vidaPersonajeColumnJugadorEnemigosDeLaTierra"
+                                                                prefWidth="40.0" text="Vida"/>
+                                                        <TableColumn fx:id="KiPersonajeColumnJugadorEnemigosDeLaTierra"
+                                                                     prefWidth="40.0" text="Ki"/>
+                                                        <TableColumn
+                                                                fx:id="velocidadPersonajeColumnJugadorEnemigosDeLaTierra"
+                                                                prefWidth="40.0" text="Vel"/>
+                                                        <TableColumn
+                                                                fx:id="estadoPersonajeColumnJugadorEnemigosDeLaTierra"
+                                                                prefWidth="90.0" text="Estado"/>
+                                                    </columns>
+                                                </TableView>
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="1400.0">
+                    <children>
+                        <AnchorPane prefHeight="100.0" prefWidth="300.0"/>
+                        <AnchorPane prefHeight="100.0" prefWidth="800.0">
+                            <children>
+                                <Label fx:id="turno" alignment="CENTER" layoutX="7.0" prefHeight="200.0"
+                                       prefWidth="807.0" text="Label" AnchorPane.bottomAnchor="0.0"
+                                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                       AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font size="24.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="100.0" prefWidth="300.0">
+                            <children>
+                                <Button layoutX="129.0" layoutY="-12.0" mnemonicParsing="false"
+                                        onAction="#onClickPasarTurno" prefHeight="100.0" prefWidth="306.0"
+                                        text="Pasar Turno" textFill="#1e1e1e" AnchorPane.bottomAnchor="0.0"
+                                        AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                        AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font size="22.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
